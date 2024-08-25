@@ -19,18 +19,18 @@ Welcome to the repository for the Kaggle "House Prices - Advanced Regression Tec
 
 This project is organized into the following key components:
 
-- `config/`: Contains configuration files for setting up environment variables and parameters.
-- `data/`: Includes raw and processed datasets.
-- `datapreprocessing/`: Scripts for cleaning, transforming, and preparing data for modeling.
-- `dataset/`: Contains the raw dataset files used in the competition.
+- `config.py`: Contains configuration files for setting up environment variables and parameters.
+- `data.py`: Includes raw and processed datasets.
+- `data_preprocessing.py`: Scripts for cleaning, transforming, and preparing data for modeling.
+- `dataset.py`: Contains the raw dataset files used in the competition.
 - `helpers.py`: Utility functions for various tasks such as data loading, feature engineering, and model evaluation.
 - `main.py`: The main script for running the entire pipeline from data preprocessing to model training and evaluation.
-- `models/`: Scripts and notebooks related to model building, training, and evaluation.
-- `research/`: Jupyter Notebooks for exploratory data analysis, feature engineering experiments, and model research.
+- `models.py`: Scripts and notebooks related to model building, training, and evaluation.
+- `research.ipynb`: Jupyter Notebooks for exploratory data analysis, feature engineering experiments, and model research.
 
 ## Data Preprocessing
 
-The `datapreprocessing/` directory contains scripts that handle data cleaning, feature engineering, and transformation. Key preprocessing steps include:
+The `datapreprocessing.py` directory contains scripts that handle data cleaning, feature engineering, and transformation. Key preprocessing steps include:
 
 1. **Handling Missing Values**: Imputation strategies for different types of missing data.
 2. **Feature Engineering**: Creating new features based on domain knowledge and exploratory data analysis.
@@ -38,7 +38,7 @@ The `datapreprocessing/` directory contains scripts that handle data cleaning, f
 
 ## Dataset
 
-The `dataset/` directory contains the raw data files provided for the competition. The primary dataset files are:
+The `dataset.py` directory contains the raw data files provided for the competition. The primary dataset files are:
 
 - `train.csv`: Training data including both features and target values.
 - `test.csv`: Test data with features only for which predictions are required.
@@ -62,7 +62,7 @@ The `main.py` script is the entry point for running the entire pipeline. It incl
 
 ## Models
 
-The `models/` directory contains scripts and notebooks for building and evaluating different regression models. This includes:
+The `models.py` directory contains scripts and notebooks for building and evaluating different regression models. This includes:
 
 - **Linear Regression**: Baseline model for comparison.
 - **Random Forest**: Ensemble model to capture complex interactions.
@@ -71,7 +71,7 @@ The `models/` directory contains scripts and notebooks for building and evaluati
 
 ## Research
 
-The `research/` directory includes Jupyter Notebooks for in-depth analysis and experimentation:
+The `research.ipynb` directory includes Jupyter Notebooks for in-depth analysis and experimentation:
 
 - **Exploratory Data Analysis (EDA)**: Analyzing distributions, correlations, and patterns in the data.
 - **Feature Engineering Experiments**: Testing different feature engineering techniques.
@@ -87,6 +87,6 @@ To get started with this project:
 
 1. **Clone the Repository**: `git clone https://github.com/Furk4nBulut/House-Prices-Advanced-Regression-Techniques`
 2. **Run the Main Script**: Execute `main.py` to start the data processing and model training pipeline.
-3. **Explore Research Notebooks**: Use Jupyter Notebooks in the `research/` directory to review data exploration and model experiments.
+3. **Explore Research Notebooks**: Use Jupyter Notebooks in the `research.ipynb` directory to review data exploration and model experiments.
 
 Feel free to contribute to the project or open issues for any questions or feedback.
